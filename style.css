@@ -1,0 +1,835 @@
+body {
+    background-color: #2c3338;
+}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 101; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 200px;
+    background-color: #F7F7F7; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+   
+
+ 
+}
+
+    /* The navigation menu links */
+    .switch {
+        padding: 10px 8px 20px 100px;
+        color:rgb(82, 82, 82);
+        text-decoration: none;
+        transition: color .1s linear;
+        display: block;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .name {
+        padding: 0px 4px 12px 60px;
+        font-size: 24px;
+        font-family: "Times New Roman", Times, serif;
+        color: #424040;
+        display: block;
+        z-index: 101;
+        border-bottom: 1px solid rgb(158, 71, 71);
+        
+        
+    }
+    .name a{
+      text-decoration: none;
+      color: #424040;
+    
+    }
+    
+  
+    
+    
+.mainp{
+    padding: 1px 4px 20px 20px;
+    font-size: 21px;
+    font-family: "Times New Roman", Times, serif;
+    color: #424040;
+    display: block;
+   
+}
+        /* When you mouse over the navigation links, change their color */
+        .switch:hover {
+            color:rgb(158, 71, 71);
+            text-decoration: none;;
+        }
+        .switch::after{
+            content:"";
+            display:block;
+            opacity: 0;
+            left:75px;
+            z-index: 1;
+            width:40%;
+            height:3px;
+            transition:  opacity .1s linear;
+            background:rgb(158, 71, 71);
+            position: absolute;
+        }
+        .switch:hover::after{
+            display: block;
+            opacity: 1;
+        }
+
+/* Style page content */
+.main {
+    margin-left: 180px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .switch {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+}
+.switch i.fa {
+    left: 75px;
+    position: absolute;
+    bottom:22px;
+    display: block;
+    font-size: 16px;
+}
+.border {
+    width: 300px;
+    margin: 0 auto;
+    background: white;
+    
+    border: 1px solid #F1E7E8;
+}
+
+.border:hover .product-wrap:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.d5 input, .d5 button {
+  outline: none;
+  background: transparent;
+  border-radius: 20px;
+}
+.d5 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid   gray;
+}
+.d5 button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+  
+  
+}
+.d5 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F7F7F7;
+}
+.d5 input:focus {
+  border-color: rgb(158, 71, 71);
+}
+
+form {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  left:600px;
+  padding-top: 2px;
+}
+.enter{
+   padding:  6px 8px 6px 90px;
+   
+}
+.floating-button {
+  position: relative;
+  
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 15px;
+  margin: 10px 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: gray;
+  background: #c8c8c8;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: rgb(158, 71, 71);
+  box-shadow: 0 15px 20px rgba(131, 19, 34, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+
+.clue{
+    color: rgb(165, 165, 165);
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    vertical-align: middle
+}
+.ch{
+    border-bottom: 1px solid rgb(158, 71, 71);
+  
+}
+
+/*Header*/
+.header{
+    width:100%;
+    position: absolute;
+    top:0;
+    
+    height: 64px;
+    right:0;
+    z-index:100;
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid rgb(158, 71, 71);
+}
+.header_inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    left: 300px;
+}
+/*Nav*/
+
+.nav_link{
+    right:60px;
+    color:rgb(82, 82, 82);
+    text-decoration: none;
+    transition: color .1s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    position: relative;
+  
+   
+}
+.nav_link:hover{
+    color:rgb(158, 71, 71);
+    text-decoration: none;;
+
+}
+.nav_link::after{
+    content:"";
+    display:block;
+    top:100%;
+    left:0;
+    z-index: 1;
+    width:100%;
+    height:3px;
+    opacity: 0;
+    background:rgb(158, 71, 71);
+    position: absolute;
+    transition:  opacity .1s linear;
+}
+.nav_link:hover::after{
+    display: block;
+    opacity: 1;
+}
+.nav a i.fa {
+
+  position: absolute;
+  top:4px;
+
+ 
+  display: block;
+  font-size: 23px;
+
+}
+.header1{
+    width:100%;
+    position: absolute;
+    top:0;
+   
+    height: 45px;
+    right:0;
+    z-index:100;
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid rgb(158, 71, 71);
+}
+/*Button another*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    color:gray;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 14px;
+    right:80px;
+    padding-top: 10px;
+   
+}
+.dropdown-content a {
+    color: black;
+   padding: 12px 16px 10px 25px;
+   
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+/*Subcriptions*/
+
+/*Cards*/
+
+   
+   
+   * {box-sizing: border-box;}
+   .border {
+     width: 300px;
+     margin: 0 auto;
+     background: white;
+     padding: 20px;
+     border: 1px solid #F1E7E8;
+   }
+   
+   .wrap {
+     height: 100%;
+     position: relative;
+    }
+   .product-wrap {position: relative;}
+   .product-wrap:after {
+     content: '';
+     background: rgba(73, 102, 162, .5);
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     top: 0;
+     opacity: 0;
+     transform: scale(.3);
+     transition: .3s ease-in-out;
+   }
+   .border:hover .product-wrap:after {
+     opacity: 1;
+     transform: scale(1);
+   }
+   .product-wrap a {
+     display: block;
+     text-decoration: none;
+   }
+   .product-wrap img {
+     display: block;
+     width: 100%;
+   }
+   .loop-action {
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     opacity: 0;
+     transform: translate(-50%, -50%);
+     transition: .3s ease-in-out;
+   }
+   .border:hover .loop-action {opacity: 1;}
+   .loop-action a {
+     text-decoration: none;
+     display: block;
+     border: 1px solid white;
+     white-space: nowrap;
+     text-transform: uppercase;
+     padding: .5em 1em;
+     font-size: 14px;
+     line-height: 1.6;
+     outline: none;
+     position: relative;
+     overflow: hidden;
+     text-align: center;
+     color: white;
+     min-width: 160px;
+     margin: 5px auto;
+     transition: .3s ease-in-out;
+   }
+   .loop-action a:after {
+     content: '';
+     position: absolute;
+     left: -220%;
+     top: -500%;
+     width: 140%;
+     height: 1000%;
+     transform: rotate(45deg);
+     background: white;
+     z-index: -1;
+     transition: .3s ease-in-out;
+   }
+   .loop-action a:hover {color: black;}
+   .loop-action a:hover:after {left: 0%;}
+   .border:hover {box-shadow: 7px 5px 10px -5px black;}
+   .product-info {padding-top: 15px;}
+   .stars {
+     font-size: 14px;
+     font-family: FontAwesome;
+   }
+   .stars:before {
+     content: "\f005\f005\f005\f005\f123";
+     color: #F2453E;
+   }
+   .product-title {
+     font-weight: normal;
+     font-family: "Open Sans";
+     color: #162546;
+     font-size: 24px;
+   }
+   .price {
+     font-family: "Open Sans";
+     color: #162546;
+     font-style: italic;
+     font-weight: bold;
+   }
+   P.fig {
+       text-align: center; 
+      }
+       .leftimg {
+       float:left; 
+       margin: 7px 7px 7px 0; 
+      }
+      .rightimg  {
+       float: right; 
+       margin: 7px 0 7px 7px; 
+      }
+      .parent {
+       margin: 5%;
+      }
+     
+      .card-body{
+       background: rgb(6, 208, 235);
+       
+      }
+      .card{
+       border: 0px;  
+       padding-top: 60px;
+      }
+      .card-deck2{
+          left: 200px;
+      }
+      .video{
+          width:360px;
+          height: 450px;
+         
+      }
+      .border2 {
+        width: 400px;
+        margin: 0 auto;
+        background: white;
+        padding: 20px;
+        border: 1px solid #F1E7E8;
+      }
+/*Подсказка*/
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(77, 77, 77);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  top:35px;
+  right: -75px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*Аватар*/
+.round {
+  border-radius: 100px; 
+  border: 2px solid rgb(82, 82, 82); 
+  width: 30px;
+  height: 30px;
+ }
+ .last{
+   border-bottom:1px solid rgb(82, 82, 82);
+ }
+ /*Форма загрузки видео*/
+ .load_form{
+   position: relative;
+  border-radius: 10px;
+  width: 950px;
+  height: 840px;
+  left:600px;
+  background: white;
+  
+  border: 1px solid #F1E7E8;
+ }
+ .title{
+   font-size: 25px;
+   padding: 7px 0px 0px 50px;
+   font-weight: 550;
+   font-family: 'Arial';
+ }
+ .under_title{
+  font-size: 17px;
+  color: rgb(82, 82, 82);
+  position: relative;
+  font-family: 'Arial';
+  left:50px;
+  bottom:20px;
+ }
+ 
+/*загрузка видео*/
+
+.floating-button2 {
+  position: relative;
+  left: 260px;
+  bottom:330px;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 15px;
+  margin: 10px 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: gray;
+  background: #c8c8c8;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button2:hover {
+  background: rgb(158, 71, 71);
+  box-shadow: 0 15px 20px rgba(131, 19, 34, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+ .example-1 .form-group{
+   position: relative;
+   padding:35px;
+   margin:1em;
+   bottom:40px;
+  }
+ .example-1 input[type=file]{
+   outline:0;
+   opacity:1;
+   pointer-events:none;
+   user-select:none;
+   padding: 50px 0px;
+   color:rgb(77, 77, 77);
+  }
+
+  .example-1 input:hover[type=file]{
+    
+    color:black;
+   }
+ .example-1 .label{
+   height:250px;
+   width:250px;
+   border:2px dashed grey;
+   border-radius:5px;
+   display:block;
+   padding:1.2em;
+   transition:border 300ms ease;
+   cursor:pointer;
+   text-align:center
+  }
+ .example-1 .label i{
+   display:block;
+  font-size:55px;
+  padding-top: 50px;;
+}
+ .example-1 .label i,.example-1 .label .title{
+   color:grey;
+  transition:200ms color}
+ .example-1 .label:hover{border:2px solid rgb(158, 71, 71)}
+ .example-1 .label:hover i,.example-1 .label:hover .title{color:rgb(163, 59, 59)}
+ *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+
+
+    /* text-field */
+    .text-field {
+      position: relative;
+      left:320px;
+      bottom:365px;
+      z-index: 20;
+    }
+
+    .text-field__label {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .text-field__input {
+      display: block;
+      width:575px;
+      height: calc(2.25rem + 2px);
+      padding: 0.375rem 0.75rem;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid #bdbdbd;
+      border-radius: 0.25rem;
+      transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+
+    .text-field__input::placeholder {
+      color: #212529;
+      opacity: 0.4;
+    }
+
+    .text-field__input:focus {
+      color: #212529;
+      background-color: #fff;
+      border-color: #bdbdbd;
+      outline: 0;
+      box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    }
+
+    .text-field__input:disabled,
+    .text-field__input[readonly] {
+      background-color: #f5f5f5;
+      opacity: 1;
+    }
+    /*Поле выбора конфициальности*/
+    .container1 {
+
+      position: relative;
+      bottom: 350px;
+      left:245px;
+      width: 400px;
+      text-align: center;
+    }
+    
+    .container1 > .dropdown1 {
+      margin: 0 20px;
+      vertical-align: top;
+    }
+    
+    .dropdown1 {
+      display: inline-block;
+      position: relative;
+      overflow: hidden;
+      height: 30px;
+      width: 250px;
+      background: rgb(255, 255, 255);
+      border: 1px solid;
+      border-color: rgb(88, 88, 88) #6e6e6e rgb(88, 88, 88);
+      border-radius: 3px;
+      background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+      background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+      background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+      background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+      -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+    }
+    
+    .dropdown1:before, .dropdown1:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 9px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 4px dashed;
+      border-color: #888888 transparent;
+      pointer-events: none;
+    }
+    
+    .dropdown1:before {
+      border-bottom-style: solid;
+      border-top: none;
+    }
+    
+    .dropdown1:after {
+      margin-top: 7px;
+      border-top-style: solid;
+      border-bottom: none;
+    }
+    
+    .dropdown1-select {
+      position: relative;
+      width: 130%;
+      margin: 0;
+      padding: 6px 8px 6px 10px;
+      height: 28px;
+      line-height: 14px;
+      font-size: 14px;
+      color: black;
+      text-shadow: 0 1px white;
+      background: #f2f2f2; /* Fallback for IE 8 */
+      background: rgba(0, 0, 0, 0) !important; /* "transparent" doesn't work with Opera */
+      border: 0;
+      border-radius: 0;
+      -webkit-appearance: none;
+    }
+    
+    .dropdown1-select:focus {
+      z-index: 3;
+      width: 100%;
+      color: #394349;
+      outline: 2px solid #49aff2;
+      outline: 2px solid -webkit-focus-ring-color;
+      outline-offset: -2px;
+    }
+    
+    .dropdown1-select > option {
+      margin: 3px;
+      padding: 6px 8px;
+      text-shadow: none;
+      background: #f2f2f2;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    /* Fix for IE 8 putting the arrows behind the select element. */
+    
+    .lt-ie9 .dropdown1 {
+      z-index: 1;
+    }
+    
+    .lt-ie9 .dropdown1-select {
+      z-index: -1;
+    }
+    
+    .lt-ie9 .dropdown1-select:focus {
+      z-index: 3;
+    }
+    
+    /* Dirty fix for Firefox adding padding where it shouldn't. */
+    
+    @-moz-document url-prefix() {
+      .dropdown1-select {
+        padding-left: 6px;
+      }
+    }
+    /*ЧекБоксы*/
+    /* для элемента input c type="checkbox" */
+    .custom-checkbox {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    /* для элемента label, связанного с .custom-checkbox */
+    .custom-checkbox+label {
+      display: inline-flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    /* создание в label псевдоэлемента before со следующими стилями */
+    .custom-checkbox+label::before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border: 1px solid #adb5bd;
+      border-radius: 0.25em;
+      margin-right: 0.5em;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+
+    /* стили при наведении курсора на checkbox */
+    .custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+      border-color: rgb(187, 99, 99);
+    }
+
+    /* стили для активного чекбокса (при нажатии на него) */
+    .custom-checkbox:not(:disabled):active+label::before {
+      background-color: rgb(187, 99, 99);
+      border-color: rgb(187, 99, 99);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе */
+    .custom-checkbox:focus+label::before {
+      box-shadow: 0 0 0 0.2rem rgb(255, 185, 185);
+    }
+
+    /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+    .custom-checkbox:focus:not(:checked)+label::before {
+      border-color: rgb(187, 99, 99);
+    }
+
+    /* стили для чекбокса, находящегося в состоянии checked */
+    .custom-checkbox:checked+label::before {
+      border-color: rgb(158, 71, 71);
+      background-color: rgb(158, 71, 71);
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    /* стили для чекбокса, находящегося в состоянии disabled */
+    .custom-checkbox:disabled+label::before {
+      background-color: #e9ecef;
+    }
+
+
+
+    .checkbox {
+      margin-bottom: 1em;
+      position: relative;
+      left: 325px;
+      bottom: 320px;
+    }
+    .logo{
+      position: relative;
+    }
+   
+    
+ 
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok Clone</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="drop_down_btn.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="d5">
+                    <div class="d5">
+                        <form>
+                          <input type="text" placeholder="Поиск аккаунтов и видео">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        </div>
+                </div>
+                <nav class="nav">
+                   
+                    <a class="nav_link" href="#">Загрузить</a>
+                    <a   class="nav_link" href="authorization.html" >Войти</a>
+                    <div class="dropdown">
+                        <a onclick="myFunction()" class="nav_link dropbtn" href="#">Другое</a>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">Язык</a>
+                          <a  href="#">Обратная связь и помощь</a>
+                        </div>
+                      </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="sidenav">
+      <p class="name" ><b><a href="index.html">Tik Tok Clone</a></b></p>
+        <a href="#" class="switch"><i class="fa fa-home"></i>Рекомендуем</a>
+        <a href="subscriptions.html"  class="switch"><i class="fa fa-user-friends"></i>Подписки</a>
+        <a href="#" class="ch switch"><i class="fa fa-video "></i>Стрим</a>
+        <div class="banner">
+            <div class="wrapper">
+                <p class="clue">Войдите, чтобы подписываться на авторов, ставить лайки видео и читать комментарии.</p>
+                <a href="authorization.html" class=" floating-button">Войти</a>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        
+        <div class="card-deck">
+            <div class="border2 card" id="bor1">
+              <div class="wrap">
+                <div >
+                  <video controls="controls" muted="muted" autoplay="autoplay" class="video" src="videos\video_first_user.mp4"></video>
+                </div>
+               
+              </div>
+                <div class="product-info">
+                  <h2 class="product-title"><b> User1 #rec#sad</b></h2>
+               </div>
+            </div><br>
+            <div class="border2 card" id="bor1">
+              <div class="wrap">
+                <div >
+                  <video controls="controls" muted="muted" autoplay="autoplay" class="video" src="videos\video_first_user.mp4"></video>
+                </div>
+               
+              </div>
+                <div class="product-info">
+                  <h2 class="product-title"><b> User2 #rec#sad</b></h2>
+               </div>
+            </div><br>
+            <div class="border2 card" id="bor1">
+              <div class="wrap">
+                <div >
+                  <video controls="controls" muted="muted" autoplay="autoplay" class="video" src="videos\video_first_user.mp4"></video>
+                </div>
+               
+              </div>
+                <div class="product-info">
+                  <h2 class="product-title"><b> User3 #rec#sad</b></h2>
+               </div>
+            </div><br>
+        </div>
+</body>
+</html>

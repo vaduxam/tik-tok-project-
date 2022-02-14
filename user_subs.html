@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok Clone</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="drop_down_btn.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/dba497c156.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="d5">
+                    <div class="d5">
+                        <form>
+                          <input type="text" placeholder="Поиск аккаунтов и видео">
+                          <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        </div>
+                </div>
+                <nav class="nav">
+                   
+                    <a class="nav_link tooltip" href="load_video.html"><i class="fa fa-solid fa-cloud-arrow-down"></i>
+                        <span class="tooltiptext">Загрузить видео</span></a>
+                    <a  class="nav_link tooltip" href="user.message.html" ><i class="fa fa-thin fa-paper-plane"></i>
+                        <span class="tooltiptext">Сообщение</span></a></a>
+                    <a  class="nav_link tooltip" href="#"><i class="fa fa-thin fa-message"></i>
+                        <span class="tooltiptext">Входящие</span></a></a>
+                        <div class="dropdown">
+                            <a onclick="myFunction()" class="nav_link " href="#"><img src="image/avatar.png" alt="Аватар" class="round dropbtn"/></a>
+                            <div id="myDropdown" class="dropdown-content">
+                              <a href="#">Смотреть профиль</a>
+                              <a class="last"  href="#">Настройки</a>
+                              <a   href="index.html"><i class="fas fa-solid fa-arrow-right-from-bracket"></i>Выйти</a>
+                            </div>
+                          </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="sidenav">
+      <p class="name" ><b><a href="user_main.html">Tik Tok Clone</a></b></p>
+        <a href="user_rec.html"  class="switch"><i class="fa fa-home"></i>Рекомендуем</a>
+        <a href="#"  class="switch"><i class="fa fa-user-friends"></i>Подписки</a>
+        <a href="#" class="ch switch"><i class="fa fa-video "></i>Стрим</a>
+        <div class="banner">
+            <div class="wrapper">
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        
+        <div class="card-deck">
+            <div class="border card" id="bor1">
+              <div class="wrap">
+                <div class="product-wrap">
+                  <a href=""><img src="https://i.insider.com/5e78e5b22d41c1701b334e1a?width=750&format=jpeg&auto=webp"></a>
+                </div>
+                <div class="loop-action">
+                  <a href="#" class="add-to-cart">Перейти</a>
+                </div>
+              </div>
+                <div class="product-info">
+                  <h2 class="product-title"><b> Charli D'Amelio</b></h2>
+                  <p>103.6 миллионов подписчиков</p>
+               </div>
+            </div><br>
+            <div class="border card" id="bor1">
+              <div class="wrap">
+                <div class="product-wrap">
+                  <a href=""><img src="https://i.insider.com/5e33138f62fa8157fc433c26?width=700&format=jpeg&auto=webp"></a>
+                </div>
+                <div class="loop-action">
+                  <a href="#" class="add-to-cart">Перейти</a>
+                </div>
+              </div>
+                <div class="product-info">
+                  <h2 class="product-title"><b> Addison Rae </b></h2>
+                  <p>51.3 миллионов подписчиков</p>
+               </div>
+            </div><br>
+            <div class="border card" id="bor1">
+                <div class="wrap">
+                  <div class="product-wrap">
+                    <a href=""><img src="https://i.insider.com/5e33151c62fa8159da7c2a94?width=700&format=jpeg&auto=webp"></a>
+                  </div>
+                  <div class="loop-action">
+                    <a href="#" class="add-to-cart">Перейти</a>
+                  </div>
+                </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><b> Spencer X </b></h2>
+                    <p>50.3 миллионов подписчиков</p>
+                 </div>
+              </div><br>
+              <div class="border card" id="bor1">
+                <div class="wrap">
+                  <div class="product-wrap">
+                    <a href=""><img src="https://i.insider.com/5d4b188b100a243d4c5a1ab3?width=700&format=jpeg&auto=webp"></a>
+                  </div>
+                  <div class="loop-action">
+                    <a href="#" class="add-to-cart">Перейти</a>
+                  </div>
+                </div>
+                  <div class="product-info">
+                    <h2 class="product-title"><b> Loren Gray </b></h2>
+                    <p>50.2 миллионов подписчиков</p>
+                 </div>
+              </div><br>
+        </div>
+        
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Авторизация</title>
+	<link rel="stylesheet" href="style_athorization.css" media="screen" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	
+</head>
+<body>
+
+
+    <div class="show-top">
+        <a href="index.html" >Главная Tik Tik Clone</a>
+        <span class="right">
+        </span>
+    <div class="clr"></div>
+    </div>
+
+
+    <div id="login">
+        <form action="javascript:void(0);" method="get">
+            <fieldset class="clearfix">
+                <p><i class="fas fa-mobile-alt"></i><input type="text" value="Номер телефона" onBlur="if(this.value == '') this.value = 'Номер Телефона'" onFocus="if(this.value == 'Номер телефона') this.value = '+380'" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><i class="far fa-envelope"></i><input type="text" value="Почта" onBlur="if(this.value == '') this.value = 'Почта'" onFocus="if(this.value == 'Почта') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-user"></span><input type="text" value="Логин" onBlur="if(this.value == '') this.value = 'Логин'" onFocus="if(this.value == 'Логин') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                <p><span class="fontawesome-lock"></span><input type="password"  value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль'" onFocus="if(this.value == 'Пароль') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                <p><input onClick='location.href="user_main.html"' type="submit" value="Зарегистрироваться"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,441 @@
+body {
+    background-color: #2c3338;
+}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 101; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 200px;
+    background-color: #F7F7F7; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+   
+
+ 
+}
+
+    /* The navigation menu links */
+    .switch {
+        padding: 10px 8px 20px 100px;
+        color:rgb(82, 82, 82);
+        text-decoration: none;
+        transition: color .1s linear;
+        display: block;
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .name {
+        padding: 0px 4px 12px 60px;
+        font-size: 24px;
+        font-family: "Times New Roman", Times, serif;
+        color: #424040;
+        display: block;
+        z-index: 101;
+        border-bottom: 1px solid rgb(158, 71, 71);
+        
+        
+    }
+    .name a{
+      text-decoration: none;
+      color: #424040;
+    
+    }
+    
+  
+    
+    
+.mainp{
+    padding: 1px 4px 20px 20px;
+    font-size: 21px;
+    font-family: "Times New Roman", Times, serif;
+    color: #424040;
+    display: block;
+   
+}
+        /* When you mouse over the navigation links, change their color */
+        .switch:hover {
+            color:rgb(158, 71, 71);
+            text-decoration: none;;
+        }
+        .switch::after{
+            content:"";
+            display:block;
+            opacity: 0;
+            left:75px;
+            z-index: 1;
+            width:40%;
+            height:3px;
+            transition:  opacity .1s linear;
+            background:rgb(158, 71, 71);
+            position: absolute;
+        }
+        .switch:hover::after{
+            display: block;
+            opacity: 1;
+        }
+
+/* Style page content */
+.main {
+    margin-left: 180px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .switch {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+}
+.switch i.fa {
+    left: 75px;
+    position: absolute;
+    bottom:22px;
+    display: block;
+    font-size: 16px;
+}
+.border {
+    width: 300px;
+    margin: 0 auto;
+    background: white;
+    
+    border: 1px solid #F1E7E8;
+}
+
+.border:hover .product-wrap:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+.d5 input, .d5 button {
+  outline: none;
+  background: transparent;
+  border-radius: 20px;
+}
+.d5 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: 3px solid   gray;
+}
+.d5 button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+  
+  
+}
+.d5 button:before {
+  content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F7F7F7;
+}
+.d5 input:focus {
+  border-color: rgb(158, 71, 71);
+}
+
+form {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  left:600px;
+  padding-top: 0px;
+}
+.enter{
+   padding:  6px 8px 6px 90px;
+   
+}
+.floating-button {
+  position: relative;
+  left: 650px;
+  bottom:55px;
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 15px;
+  margin: 10px 65px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: gray;
+  background: #c8c8c8;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  transition: .3s;
+}
+.floating-button:hover {
+  background: rgb(158, 71, 71);
+  box-shadow: 0 15px 20px rgba(131, 19, 34, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+
+.clue{
+    color: rgb(165, 165, 165);
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    vertical-align: middle
+}
+.ch{
+    border-bottom: 1px solid rgb(158, 71, 71);
+  
+}
+
+/*Header*/
+.header{
+    width:100%;
+    position: absolute;
+    top:0;
+   
+    height: 53px;
+    right:0;
+    z-index:100;
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid rgb(158, 71, 71);
+}
+.header_inner{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    left: 300px;
+}
+/*Nav*/
+
+.nav_link{
+    right:60px;
+    color:rgb(82, 82, 82);
+    text-decoration: none;
+    transition: color .1s linear;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    position: relative;
+  
+   
+}
+.nav_link:hover{
+    color:rgb(158, 71, 71);
+    text-decoration: none;;
+
+}
+.nav_link::after{
+    content:"";
+    display:block;
+    top:100%;
+    left:0;
+    z-index: 1;
+    width:100%;
+    height:3px;
+    opacity: 0;
+    background:rgb(158, 71, 71);
+    position: absolute;
+    transition:  opacity .1s linear;
+}
+.nav_link:hover::after{
+    display: block;
+    opacity: 1;
+}
+.nav a i.fa {
+
+  position: absolute;
+  top:4px;
+
+ 
+  display: block;
+  font-size: 23px;
+
+}
+.header1{
+    width:100%;
+    position: absolute;
+    top:0;
+   
+    height: 45px;
+    right:0;
+    z-index:100;
+    padding-top: 10px;
+    background-color: #F7F7F7;
+    border-bottom: 1px solid rgb(158, 71, 71);
+}
+/*Button another*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    color:gray;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 14px;
+    right:80px;
+    padding-top: 10px;
+   
+}
+.dropdown-content a {
+    color: black;
+   padding: 12px 16px 10px 25px;
+   
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+
+/*Подсказка*/
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(77, 77, 77);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  top:35px;
+  right: -75px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*Аватар*/
+.round {
+  border-radius: 100px; 
+  border: 2px solid rgb(82, 82, 82); 
+  width: 30px;
+  height: 30px;
+ }
+ .last{
+   border-bottom:1px solid rgb(82, 82, 82);
+ }
+ /*Форма отправки сообщений*/
+ .message_form{
+    position: relative;
+   border-radius: 10px;
+   width: 950px;
+   height: 840px;
+   left:600px;
+   background: white;
+   
+   border: 1px solid #F1E7E8;
+  }
+ 
+  
+#submitmsg { 
+    font:12px arial;
+    position: relative;
+    right: 570px;
+ }
+  
+
+  
+#wrapper, #loginform {
+    margin:0 auto;
+    border-radius: 10px;
+    padding-bottom:25px;
+    background:rgb(223, 135, 135);
+    width:950px;
+    height: 813px;
+    border:1px solid #ACD8F0; }
+  
+
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    padding:10px;
+    background:#fff;
+    height:600px;
+    width:926px;
+    border:1px solid rgb(158, 71, 71);
+    }
+  
+#usermsg {
+    width:395px;
+    border:1px solid rgb(158, 71, 71); 
+    position: relative;
+    right:570px;
+}
+  
+
+  
+  
+#menu { padding:12.5px 25px 12.5px 25px; }
+  
+.round2 {
+    position: relative;
+    left:10px;
+    border-radius: 100px; 
+    border: 2px solid rgb(82, 82, 82); 
+    width: 45px;
+    height: 45px;
+   }
+   .text-field__input {
+    position:relative;
+    left:40px;
+    display: block;
+    width:600px;
+    height: calc(2rem );
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  .name_message{
+      position: relative;
+     left:100px;
+     bottom:50px;
+  }
+  .avatar_message{
+      position: relative;
+  }
+    
+ 
+
